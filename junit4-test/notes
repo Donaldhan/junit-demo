@@ -1,0 +1,16 @@
+############################################
+cobertura-maven-plugin是一个校验单元测试用例覆盖率的工具,
+可以生成一个测试覆盖率报告,可以给单元测试用例编写提供参考.
+############################
+使用方法：
+##############################
+添加plugin到POM
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>cobertura-maven-plugin</artifactId>
+    <version>2.7</version>
+</plugin>
+数据都准备好了,我们执行以下maven命令mvn cobertura:cobertura,
+执行完后会在target目录里找到site目录,用浏览器打开里面的index.html,
+这就是测试用例执行完后cobertura-maven-plugin得出的覆盖率报告.
+具体说明see#http://www.cnblogs.com/qyf404/p/5040593.html
