@@ -33,3 +33,4 @@ however the junit4 is use the @Test annotation.
 
 2.junit3 integrate use the TestSuite.class,however the junit4 use the @RunWith and @SuiteClasses 
 annotation,the details in juint*.bootstrap.TestSuite*.
+
