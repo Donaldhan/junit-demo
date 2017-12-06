@@ -17,16 +17,14 @@ import util.converter.IntegerExtConverter;
  */
 public class XmlUtil {
 	private static final XStream xstream;
+	/** xml文件头*/
+	public static final String XML_HEADER =  "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n";
 	static {
 		xstream = new XStream(new DomDriver("utf-8"));
 		xstream.registerConverter(new DoubleExtConverter());
 		xstream.registerConverter(new DateExtConverter());
 		xstream.registerConverter(new IntegerExtConverter());
 	}
-	/**
-	 * xml文件头
-	 */
-	public static final String XML_HEADER =  "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
 	/**
 	 * 转化对象为Xml字符串
 	 * @param obj
